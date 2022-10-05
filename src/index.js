@@ -17,3 +17,11 @@ else {
 let ertek = 5;
 let user = new User_1.User('nev', 44);
 user.kiir();
+let users = [];
+users.push(new User_1.User("masikuser", 10));
+users.push(user);
+console.log(users);
+let u = users[1];
+for (let e of users) {
+    e.kiir();
+}
